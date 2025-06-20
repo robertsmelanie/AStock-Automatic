@@ -3,7 +3,7 @@ const generateButton = document.getElementById('generateButton');
 const output = document.getElementById('output');
 
 generateButton.addEventListener('click', async () => {
-    if (!imageInput.files.length) return alert 'Please select a JPEG image.';
+    if (!imageInput.files.length) return alert ('Please select a JPEG image.');
 
     const file = imageInput.files[0];
     const form = new FormData();
